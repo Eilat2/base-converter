@@ -1,0 +1,55 @@
+<!-- 
+ names:
+Linor Bareli 323109629
+Eilat Cahana 206518524 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <h1>Base Converter</h1>
+    
+    <p>Convert numbers between different bases (Binary, Decimal, Hex, Octal).</p>
+    
+
+    <div class="buttons-group" id="from-base">
+        <p><strong>From Base:</strong></p>
+        <button onclick="setFromBase(2)" id="btn-binary-from">Binary (2)</button>
+        <button onclick="setFromBase(8)" id="btn-octal-from">Octal (8)</button>
+        <button onclick="setFromBase(10)" id="btn-decimal-from">Decimal (10)</button>
+        <button onclick="setFromBase(16)" id="btn-hex-from">Hexadecimal (16)</button>
+    </div>
+
+    <label for="number-input">Enter a number:</label>
+    <input type="text" id="number-input" placeholder="Enter number to convert">
+
+
+    <div class="buttons-group" id="to-base">
+        <p><strong>To Base:</strong></p>
+        <button onclick="setToBase(2)" id="btn-binary-to">Binary (2)</button>
+        <button onclick="setToBase(8)" id="btn-octal-to">Octal (8)</button>
+        <button onclick="setToBase(10)" id="btn-decimal-to">Decimal (10)</button>
+        <button onclick="setToBase(16)" id="btn-hex-to">Hexadecimal (16)</button>
+    </div>
+
+   
+    <div>
+        <button class="convert" onclick="convert()">Convert</button>
+    </div>
+    
+ 
+    <div id="result" class="result-display">
+       
+    </div>
+
+    <script src="scripts.js"></script>  
+</body>
+</html>
