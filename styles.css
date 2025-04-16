@@ -2,6 +2,32 @@
 names:
 Linor Bareli 323109629
 Eilat Cahana 206518524*/
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .buttons-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 90%;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .result-display {
+        font-size: 16px;
+    }
+}
 body {
     font-family: sans-serif;
     background-color: white;
@@ -76,7 +102,7 @@ button.convert:hover {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .buttons-group {
@@ -85,12 +111,14 @@ button.convert:hover {
     }
 
     button {
-        width: 100%;
-        font-size: 16px;
+        width: 90%;
+        margin-bottom: 10px;
+        font-size: 14px;
     }
 
     input {
         width: 90%;
+        font-size: 14px;
     }
 
     .result-display {
